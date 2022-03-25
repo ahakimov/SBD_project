@@ -122,6 +122,6 @@ IS
             dbms_output.put_line(sqlerrm);
             end;
 
-    select Name, Surename, a City
-from Person, ADDRESSES.a
-WHERE FIRSTNAME
+    select FIRSTNAME, LASTNAME, a.City
+from Person, ADDRESSES a
+WHERE FIRSTNAME = 'BOB' and a.CITY = 'WARSAW'
