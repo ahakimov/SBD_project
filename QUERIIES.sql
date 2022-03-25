@@ -121,3 +121,7 @@ IS
             when out_of_range then
             dbms_output.put_line(sqlerrm);
             end;
+
+    select Name, Surename, a City
+from Person, ADDRESSES.a
+WHERE FIRSTNAME
